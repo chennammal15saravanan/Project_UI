@@ -1,0 +1,36 @@
+{% extends "dashboard.html"%}
+{% block title %}Home{% endblock %}
+
+{% block head_css %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='traindash.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<!-- Upload Form -->
+ <!-- Upload Form -->
+<div class="add-training-box bg-white rounded-xl p-8 shadow-lg w-full max-w-md mb-8">
+  <h3 class="form-title">Add Training Data</h3>
+  <div class="space-y-4">
+    <div>
+      <label for="botSelect" class="form-label">Select Bot</label>
+      <select id="botSelect" class="form-input"></select>
+    </div>
+    <div>
+      <label for="trainingFile" class="form-label">File - data for the Bot</label>
+      <input type="file" id="trainingFile" class="form-input" accept=".txt,.csv,.json" />
+    </div>
+    <button onclick="addTrainingData()" class="btn-primary">Add Training Data</button>
+  </div>
+</div>
+
+    
+
+     
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+ 
+{% endblock %}
+
+

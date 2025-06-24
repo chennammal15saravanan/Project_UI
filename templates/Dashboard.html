@@ -1,0 +1,37 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}Subject Bots{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  {% block head_css %}{% endblock %}
+</head>
+<body class="flex h-screen bg-gray-100 font-sans">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-gradient-to-b from-blue-800 to-blue-900 text-white flex flex-col p-6 shadow-lg">
+    <h1 class="text-2xl font-bold mb-10 flex items-center">
+      <span class="mr-2">🤖</span> Subject Bots
+    </h1>
+    <nav class="flex-1">
+      <ul class="space-y-4">
+        <li><a href="/home" class="hover:text-yellow-400">🏠 Home</a></li>
+        <li><a href="{{ url_for('bot_dashboard') }}" class="hover:text-yellow-400">🤖 My Bots</a></li>
+        <li><a href="{{ url_for('train_page') }}" class="hover:text-yellow-400">🧠 Train Bots</a></li>
+        <li><a href="History" class="hover:text-yellow-400">🚪 History</a></li>
+        <li><a href="/logout" class="hover:text-yellow-400">➡️ Logout</a></li>
+      </ul>
+    </nav>
+    <p class="text-sm opacity-75 mt-auto">© 2025 Subject Bots</p>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="flex-1 overflow-y-auto p-6">
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>

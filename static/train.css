@@ -1,0 +1,98 @@
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+/* Sidebar Styling */
+.sidebar {
+  background: linear-gradient(180deg, #1e3a8a, #1e1b4b); /* Tailwind indigo-800 */
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* Sidebar Links */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e0e7ff; /* Tailwind indigo-100 */
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.sidebar-link:hover {
+  color: #facc15; /* Tailwind yellow-300 */
+}
+
+
+/* Card container */
+.upload-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 28rem;
+  margin-bottom: 2rem;
+}
+
+/* Title */
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e40af; /* text-indigo-900 */
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Label */
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs & Select */
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.form-input:focus {
+  border-color: #6366f1;
+}
+
+/* Upload Button */
+.btn-primary {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+/* History Table Styles (if included below upload) */
+.table-header {
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.table-row:hover {
+  background-color: #f1f5f9;
+}

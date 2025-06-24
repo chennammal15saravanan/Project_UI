@@ -1,0 +1,96 @@
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Bot Card Hover Effect */
+.bot-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+}
+
+/* Sidebar Background */
+.sidebar {
+  background: linear-gradient(180deg, #1e3a8a, #1e1b4b);
+}
+
+/* Accent Color */
+.gold-accent {
+  color: #d4af37;
+}
+
+/* Toggle Hover */
+.status-toggle {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.status-toggle:hover {
+  background-color: #e5e7eb;
+}
+
+/* Emoji Scaling on Hover */
+.emoji-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.bot-card:hover .emoji-icon {
+  transform: scale(1.2);
+}
+
+/* Modal Slide In */
+.chat-modal,
+.add-bot-modal {
+  animation: slideIn 0.4s ease-out forwards;
+  max-height: 80vh;
+}
+
+/* Chat Message */
+.chat-message {
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Chat Scroll Container */
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d4af37 #f1f5f9;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
