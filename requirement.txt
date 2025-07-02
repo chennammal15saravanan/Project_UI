@@ -1,11 +1,10 @@
-pip install flask
-pip install numpy==1.24.4
-pip install pandas==2.0.3
-pip install streamlit==1.36.0
-pip install PyPDF2==3.0.1
-pip install nltk==3.8.1
-pip install supabase==2.7.4
-pip install flask==3.0.3
-pip install flask-cors==4.0.1
-pip install bcrypt==4.2.0
-pip install chardet==5.2.0
+flask==3.0.3
+flask-cors==4.0.1
+bcrypt==4.2.0
+chardet==5.2.0
+numpy==1.24.4
+pandas==2.0.3
+streamlit==1.36.0
+PyPDF2==3.0.1
+nltk==3.8.1
+supabase==2.7.4
